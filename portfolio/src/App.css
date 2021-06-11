@@ -75,7 +75,7 @@
 .openbtn {
   font-size: 1rem;
   cursor: pointer;
-  background-color: #111;
+  background-color: black;
   color: white;
   padding: 1rem 1rem;
   border: none;
@@ -88,7 +88,7 @@
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left 0.5s; /* If you want a transition effect */
-  padding: 2rem;
+  padding: 0.2rem;
 }
 
 .projectCard {
@@ -101,6 +101,27 @@ p {
   font-family: Roboto, sans-serif;
 }
 
+img {
+  max-width: -moz-available;
+  max-width: -webkit-fill-available;
+  max-width: fill-available;
+}
+
+.contactDetails {
+  border: 10px solid black;
+}
+div {
+  box-sizing: border-box;
+}
+
+article {
+  border: 10px solid black;
+}
+
+#skillsBox {
+  display: flex;
+  flex-wrap: wrap;
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {
