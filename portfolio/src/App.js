@@ -9,21 +9,24 @@ import Contact from './components/Contact'
 
 const App = () => {
   function openNav() {
-    document.getElementById('mySidebar').style.width = '35vw'
-    document.getElementById('main').style.marginLeft = '35vw'
+    document.getElementById('mySidebar').style.width = '100vw'
+    document.getElementById('main').style.marginLeft = '100vw'
     document.getElementById('navlinks').style.display = 'revert'
   }
 
   /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
   function closeNav() {
     document.getElementById('navlinks').style.display = 'none'
-    document.getElementById('mySidebar').style.width = '5vw'
-    document.getElementById('main').style.marginLeft = '5vw'
+    document.getElementById('mySidebar').style.width = '0vw'
+    document.getElementById('main').style.marginLeft = '0vw'
   }
   return (
     <div className="App">
-      <header>
-        <h1>Jake Peck's Portfolio</h1>
+      <header className="myHeader">
+        <h1>Jake Peck</h1>
+        <button id="myOpenBtn" class="openbtn" onClick={openNav}>
+          &#9776;
+        </button>
         <Nav closeNav={closeNav} openNav={openNav} />
       </header>
 

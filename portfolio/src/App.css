@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(1em + 2vmin);
-  color: white;
+  color: mintcream;
 }
 
 .App-link {
@@ -44,14 +44,24 @@
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 3rem; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background-image: linear-gradient(to top, #30cfd0 -50%, #330867 100%);
+}
+
+.myHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 0.1rem solid blue; */
+  /* background-color: black; */
+  color: mintcream;
+  background-image: linear-gradient(to top, #30cfd0 -110%, #330867 100%);
 }
 
 /* The sidebar links */
 .sidebar a {
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   text-decoration: none;
-  font-size: 0.7rem;
+  font-size: 3rem;
   color: mintcream;
   display: block;
   transition: 0.3s;
@@ -71,14 +81,30 @@
   margin-left: 1rem;
 }
 
+header h1 {
+  margin: 0.25em 0;
+  color: mintcream;
+  font-size: 2.5rem;
+}
+h1 {
+  color: darkslateblue;
+}
 /* The button used to open the sidebar */
 .openbtn {
   font-size: 1rem;
   cursor: pointer;
   background-color: black;
-  color: white;
+  color: mintcream;
   padding: 1rem 1rem;
   border: none;
+}
+
+#myOpenBtn {
+  position: absolute;
+  /* top: 0; */
+  right: 0;
+  margin: -0.5em 0 0 0;
+  background: transparent;
 }
 
 .openbtn:hover {
@@ -89,39 +115,102 @@
 #main {
   transition: margin-left 0.5s; /* If you want a transition effect */
   padding: 0.2rem;
+  background-color: mintcream;
 }
 
 .projectCard {
+  /* border: 0.1rem solid black; */
+  padding: 1rem;
+  margin: 1.5rem auto;
+  border-radius: 1rem;
+  max-width: 80vw;
+  background-color: white;
+  box-shadow: 0rem 0rem 1rem 0.1rem darkslateblue;
+}
+
+.projectCard a {
+  font-size: 2rem;
+}
+
+.pageDiv {
   border: 10px solid black;
   padding: 10px;
-  margin: 10px auto;
+  margin: 5px;
+  background-color: black;
+  color: white;
+}
+
+.pageDivs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
 }
 
 p {
   font-family: Roboto, sans-serif;
 }
 
+.intro {
+  background: url('https://i.imgur.com/tuWuUws.jpg');
+  height: 60vh;
+  background-attachment: fixed;
+  display: grid;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 img {
   max-width: -moz-available;
   max-width: -webkit-fill-available;
   max-width: fill-available;
+  width: auto;
+  height: auto;
 }
 
 .contactDetails {
-  border: 10px solid black;
+  border: 0.1rem solid black;
+  padding: 1rem;
+  margin: 0.5rem auto;
+  border-radius: 1rem;
+  max-width: 80vw;
+  background-color: white;
+  box-shadow: 0rem 0rem 1rem 0.1rem darkslateblue;
 }
 div {
   box-sizing: border-box;
 }
 
 article {
-  border: 10px solid black;
+  border: 0.1rem solid black;
+  padding: 1rem;
+  margin: 0.5rem auto;
+  border-radius: 1rem;
+  max-width: 80vw;
+  background-color: white;
+  box-shadow: 0rem 0rem 1rem 0.1rem darkslateblue;
 }
 
 #skillsBox {
   display: flex;
   flex-wrap: wrap;
 }
+
+.skill {
+  display: flex;
+  flex-direction: column;
+}
+
+svg {
+  height: 5rem;
+  max-height: 5rem;
+  width: auto;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {
