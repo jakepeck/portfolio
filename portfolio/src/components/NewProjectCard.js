@@ -1,7 +1,7 @@
 import React from 'react'
 
 const NewProjectCard = (props) => {
-  let { name, projectdesc, projecturl, projectimg, index } = props
+  let { name, projectdesc, projecturl, projectimg} = props
   console.log(projectimg)
   let bgImg = `url(` + projectimg + `)`
   return (

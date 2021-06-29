@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
-import NewProjectCard from './NewProjectCard'
+// import NewProjectCard from './NewProjectCard'
 
 const Projects = () => {
   const myProjects = [

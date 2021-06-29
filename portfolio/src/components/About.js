@@ -1,6 +1,6 @@
 import React from 'react'
-import Skills2 from './Skills2'
-import Skills3 from './Skills3'
+// import Skills2 from './Skills2'
+// import Skills3 from './Skills3'
 import Skills4 from './Skills4'
 const About = (props) => {
   return (

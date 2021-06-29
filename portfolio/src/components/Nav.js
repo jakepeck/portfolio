@@ -26,9 +26,11 @@ const Nav = (props) => {
   return (
     <nav className="navbar">
       <div id="mySidebar" className="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onClick={props.closeNav}>
+        {/* <a href="javascript:void(0)" class="closebtn" onClick={props.closeNav}>
           &times;
-        </a>
+        </a> */}
+        <button class="closebtn" onClick={props.closeNav}>&times;</button>
+        
         {/* <button class="openbtn" onClick={props.openNav}>
           &#9776;
         </button> */}
