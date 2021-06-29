@@ -116,6 +116,7 @@ h1 {
   transition: margin-left 0.5s; /* If you want a transition effect */
   padding: 0.2rem;
   background-color: mintcream;
+  height: 89vh;
 }
 
 .projectCard {
@@ -125,11 +126,82 @@ h1 {
   border-radius: 1rem;
   max-width: 80vw;
   background-color: white;
-  box-shadow: 0rem 0rem 1rem 0.1rem darkslateblue;
+  /* box-shadow: 0rem 0rem 1rem 0.1rem darkslateblue; */
+}
+
+.projectCardB {
+  /* border: 0.1rem solid black; */
+  padding: 1rem;
+  margin: 1.5rem auto;
+  border-radius: 1rem;
+  max-width: 80vw;
+  background-color: white;
+  border-radius: 41px;
+background: #ebe5e5;
+box-shadow:  33px 33px 65px #c1bcbc, -33px -33px 65px #ffffff;
+  
+}
+
+.projectCardC {
+  /* border: 0.1rem solid black; */
+  padding: 0 0 0.25rem 0;
+  margin: .5rem auto;
+  border-radius: .5rem;
+  max-width: 80vw;
+  width: 77vw;
+  background-color: white;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  
 }
 
 .projectCard a {
   font-size: 2rem;
+  
+}
+
+.projectCardC p {
+  margin: .5em;
+}
+
+.projectCardD {
+  /* border: 0.1rem solid black; */
+  width: 40vw;
+  /* height: 40vw; */
+ 
+  padding: .5rem;
+  /* margin: 1.5rem auto; */
+  border-radius: 0rem;
+  max-width: 40vw;
+  background-color: white;
+  /* box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3); */
+  
+}
+
+.projectCardE {
+  display: flex;
+  padding: .5rem;
+}
+
+.projectCardE * {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.projectCardE img{
+  position: relative;
+}
+
+article div .projects {
+  /* display: grid; */
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+}
+
+.hidden {
+  display: none;
 }
 
 .pageDiv {
@@ -155,12 +227,13 @@ p {
 }
 
 .intro {
-  background: url('https://i.imgur.com/tuWuUws.jpg');
-  height: 60vh;
-  background-attachment: fixed;
-  display: grid;
+  /* background: url('https://i.imgur.com/tuWuUws.jpg'); */
+  background: url('https://i.imgur.com/JRvAPwN.jpg');
+  height: 90vh;
+  background-attachment: fixed; 
+  /* display: grid; */
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
   background-size: contain;
 }
 
@@ -172,32 +245,91 @@ img {
   height: auto;
 }
 
+.about img{
+  max-width: 40vw;
+  height: auto;
+}
+
+.about h2 {
+  font-size: 2rem;
+}
+.projectCardC a {
+  font-size: 3rem;
+}
 .contactDetails {
-  border: 0.1rem solid black;
+  /* border: 0.1rem solid black; */
   padding: 1rem;
-  margin: 0.5rem auto;
+  margin: 0.5rem auto 1rem auto;
   border-radius: 1rem;
   max-width: 80vw;
   background-color: white;
-  box-shadow: 0rem 0rem 1rem 0.1rem darkslateblue;
+  /* box-shadow: 0rem 0rem 1rem 0.01rem darkslateblue; */
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 div {
   box-sizing: border-box;
 }
 
 article {
-  border: 0.1rem solid black;
+  
   padding: 1rem;
-  margin: 0.5rem auto;
+  margin: 1rem auto;
   border-radius: 1rem;
-  max-width: 80vw;
+  max-width: 78vw;
   background-color: white;
-  box-shadow: 0rem 0rem 1rem 0.1rem darkslateblue;
+  /* box-shadow: 0rem 0rem 1rem 0.1rem darkslateblue; */
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 #skillsBox {
   display: flex;
   flex-wrap: wrap;
+}
+
+#skillsBox2 {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  gap: 2rem;
+  color: darkslateblue;
+}
+
+#skillsBox2 i {
+  font-size: 3rem;
+  color: black;
+}
+
+#skillsBox4 {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  gap: 2rem;
+}
+
+#skillsBox4 i {
+  font-size: 3.5rem;
+}
+
+#skillsBox2 div {
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+}
+
+#skillsBox2 i {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: .5rem;
+}
+
+article h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-align: left;
+  margin-bottom: 1rem;
+  /* text-decoration: underline; */
 }
 
 .skill {
@@ -209,6 +341,81 @@ svg {
   height: 5rem;
   max-height: 5rem;
   width: auto;
+}
+
+.contactDetails h1{
+  text-align: left;
+  margin:0;
+  font-size: 3rem;
+}
+
+.contactDetails i {
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+.contactInfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.contactInfo div {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: baseline;
+  flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contactInfo div p{
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: baseline;
+  flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+
+}
+
+.projects {
+  /* display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects2 {
+  display: grid;
+  max-width: 80vw;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  /* display: flex; */
+  /* flex-flow: row wrap;
+  align-items: center;
+  justify-content: center; */
+}
+
+.newpc {
+  height: 25vw;
+  background-size: cover;
+  color: white;
+}
+
+.newpc h1{
+  
+  color: white;
+}
+
+.newpc-title {
+  background-color: black;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

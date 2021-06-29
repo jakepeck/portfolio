@@ -34,7 +34,7 @@ const Nav = (props) => {
         </button> */}
         <div id="navlinks">
           <NavLink to="/" onClick={props.closeNav}>
-            Introduction
+            Home
           </NavLink>
           <NavLink to="/about" onClick={props.closeNav}>
             About

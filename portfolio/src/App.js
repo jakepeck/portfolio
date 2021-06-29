@@ -5,7 +5,7 @@ import Nav from './components/Nav'
 import About from './components/About'
 import Introduction from './components/Introduction'
 import Projects from './components/Projects'
-import Contact from './components/Contact'
+import Contact2 from './components/Contact2'
 
 const App = () => {
   function openNav() {
@@ -42,7 +42,7 @@ const App = () => {
             <Projects />
           </Route>
           <Route exact path="/contact">
-            <Contact />
+            <Contact2 />
           </Route>
         </Switch>
       </main>
