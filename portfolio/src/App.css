@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(1em + 2vmin);
-  color: mintcream;
+  color: white;
 }
 
 .App-link {
@@ -53,7 +53,7 @@
   justify-content: center;
   /* border: 0.1rem solid blue; */
   /* background-color: black; */
-  color: mintcream;
+  color: white;
   background-image: linear-gradient(to top, #30cfd0 -110%, #330867 100%);
 }
 
@@ -62,7 +62,7 @@
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   text-decoration: none;
   font-size: 3rem;
-  color: mintcream;
+  color: white;
   display: block;
   transition: 0.3s;
 }
@@ -80,11 +80,12 @@
   font-size: 2rem;
   margin-left: 1rem;
   background-color: transparent;
+  border: transparent;
 }
 
 header h1 {
   margin: 0.25em 0;
-  color: mintcream;
+  color: white;
   font-size: 2.5rem;
 }
 h1 {
@@ -95,7 +96,7 @@ h1 {
   font-size: 1rem;
   cursor: pointer;
   background-color: black;
-  color: mintcream;
+  color: white;
   padding: 1rem 1rem;
   border: none;
 }
@@ -116,7 +117,7 @@ h1 {
 #main {
   transition: margin-left 0.5s; /* If you want a transition effect */
   padding: 0.2rem;
-  background-color: mintcream;
+  background-color: white;
   height: 89vh;
 }
 
@@ -138,51 +139,47 @@ h1 {
   max-width: 80vw;
   background-color: white;
   border-radius: 41px;
-background: #ebe5e5;
-box-shadow:  33px 33px 65px #c1bcbc, -33px -33px 65px #ffffff;
-  
+  background: #ebe5e5;
+  box-shadow: 33px 33px 65px #c1bcbc, -33px -33px 65px #ffffff;
 }
 
 .projectCardC {
   /* border: 0.1rem solid black; */
   padding: 0 0 0.25rem 0;
-  margin: .5rem auto;
-  border-radius: .5rem;
+  margin: 0.5rem auto;
+  border-radius: 0.5rem;
   max-width: 80vw;
   width: 77vw;
   background-color: white;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-  
 }
 
 .projectCard a {
   font-size: 2rem;
-  
 }
 
 .projectCardC p {
-  margin: .5em;
+  margin: 0.5em;
 }
 
 .projectCardD {
   /* border: 0.1rem solid black; */
   width: 40vw;
   /* height: 40vw; */
- 
-  padding: .5rem;
+
+  padding: 0.5rem;
   /* margin: 1.5rem auto; */
   border-radius: 0rem;
   max-width: 40vw;
   background-color: white;
   /* box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3); */
-  
 }
 
 .projectCardE {
   display: flex;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .projectCardE * {
@@ -191,7 +188,7 @@ box-shadow:  33px 33px 65px #c1bcbc, -33px -33px 65px #ffffff;
   left: 0;
 }
 
-.projectCardE img{
+.projectCardE img {
   position: relative;
 }
 
@@ -231,7 +228,7 @@ p {
   /* background: url('https://i.imgur.com/tuWuUws.jpg'); */
   background: url('https://i.imgur.com/JRvAPwN.jpg');
   height: 90vh;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   /* display: grid; */
   background-repeat: no-repeat;
   /* background-position: center; */
@@ -246,7 +243,7 @@ img {
   height: auto;
 }
 
-.about img{
+.about img {
   max-width: 40vw;
   height: auto;
 }
@@ -266,14 +263,13 @@ img {
   background-color: white;
   /* box-shadow: 0rem 0rem 1rem 0.01rem darkslateblue; */
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
-  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 div {
   box-sizing: border-box;
 }
 
 article {
-  
   padding: 1rem;
   margin: 1rem auto;
   border-radius: 1rem;
@@ -322,7 +318,7 @@ article {
 #skillsBox2 i {
   display: flex;
   flex-direction: column;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 article h1 {
@@ -344,9 +340,9 @@ svg {
   width: auto;
 }
 
-.contactDetails h1{
+.contactDetails h1 {
   text-align: left;
-  margin:0;
+  margin: 0;
   font-size: 3rem;
 }
 
@@ -360,7 +356,6 @@ svg {
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
-
 }
 
 .contactInfo div {
@@ -370,17 +365,15 @@ svg {
   flex-direction: column; */
   justify-content: center;
   align-items: center;
-
 }
 
-.contactInfo div p{
+.contactInfo div p {
   display: flex;
   flex-wrap: wrap;
   /* align-items: baseline;
   flex-direction: column; */
   justify-content: center;
   align-items: center;
-
 }
 
 .projects {
@@ -410,8 +403,7 @@ svg {
   color: white;
 }
 
-.newpc h1{
-  
+.newpc h1 {
   color: white;
 }
 
