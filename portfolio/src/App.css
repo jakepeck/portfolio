@@ -4,6 +4,7 @@
 .App {
   text-align: center;
   font-family: 'Bebas Neue', cursive;
+  height: 100vh;
 }
 
 .App-logo {
@@ -44,7 +45,8 @@
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 3rem; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-  background-image: linear-gradient(to top, #30cfd0 -50%, #330867 100%);
+  /* background-image: linear-gradient(to top, #30cfd0 -50%, #330867 100%); */
+  background-color: rgb(4, 0, 37);
 }
 
 .myHeader {
@@ -54,7 +56,8 @@
   /* border: 0.1rem solid blue; */
   /* background-color: black; */
   color: white;
-  background-image: linear-gradient(to top, #30cfd0 -110%, #330867 100%);
+  /* background-image: linear-gradient(to top, #30cfd0 -110%, #330867 100%); */
+  background-color: rgb(4, 0, 37);
 }
 
 /* The sidebar links */
@@ -70,17 +73,19 @@
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
   color: #f1f1f1;
+  font-size: 4.5rem;
 }
 
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
   position: absolute;
-  top: 0;
-  right: 1rem;
+  top: 0.75rem;
+  right: 1.25rem;
   font-size: 2rem;
   margin-left: 1rem;
   background-color: transparent;
   border: transparent;
+  color: white;
 }
 
 header h1 {
@@ -89,7 +94,8 @@ header h1 {
   font-size: 2.5rem;
 }
 h1 {
-  color: darkslateblue;
+  /* color: darkslateblue; */
+  color: rgb(4, 0, 37);
 }
 /* The button used to open the sidebar */
 .openbtn {
@@ -116,11 +122,16 @@ h1 {
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left 0.5s; /* If you want a transition effect */
-  padding: 0.2rem;
+  /* padding: 0.2rem; */
   background-color: white;
-  height: 89vh;
+  /* height: 89vh; */
+  padding: 0 0 1em 0;
 }
-
+.about p {
+  text-align: initial;
+  padding: 1em 2em;
+  margin: 0;
+}
 .projectCard {
   /* border: 0.1rem solid black; */
   padding: 1rem;
@@ -161,6 +172,8 @@ h1 {
 
 .projectCardC p {
   margin: 0.5em;
+  padding: 0 1em;
+  /* text-align: initial; */
 }
 
 .projectCardD {
@@ -203,11 +216,26 @@ article div .projects {
 }
 
 .pageDiv {
-  border: 10px solid black;
+  /* border: 10px solid black; */
   padding: 10px;
   margin: 5px;
-  background-color: black;
+  background-color: rgb(4, 0, 37);
   color: white;
+  text-align: center;
+  width: 36%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.1em;
+}
+
+.pageDiv:hover {
+  box-shadow: 0.1em 0.1em 1em 0.01em rgb(255, 255, 255);
+}
+
+.pageDiv:hover * {
+  transform: translate3d(150%);
+  font-size: 2.5rem;
 }
 
 .pageDivs {
@@ -218,6 +246,11 @@ article div .projects {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
+  position: absolute;
+  bottom: 1em;
+  right: 0;
+  left: 0;
+  margin: 0;
 }
 
 p {
@@ -226,7 +259,7 @@ p {
 
 .intro {
   /* background: url('https://i.imgur.com/tuWuUws.jpg'); */
-  background: url('https://i.imgur.com/JRvAPwN.jpg');
+  /* background: url('https://i.imgur.com/JRvAPwN.jpg'); */
   height: 90vh;
   background-attachment: fixed;
   /* display: grid; */
@@ -238,7 +271,7 @@ p {
 img {
   max-width: -moz-available;
   max-width: -webkit-fill-available;
-  max-width: fill-available;
+  max-width: stretch;
   width: auto;
   height: auto;
 }
@@ -250,10 +283,17 @@ img {
 
 .about h2 {
   font-size: 2rem;
+  margin: 0.5rem 0 0 0;
 }
 .projectCardC a {
   font-size: 3rem;
+  color: rgb(4, 0, 37);
 }
+
+.projectCardC a:hover {
+  color: rgb(18, 2, 163);
+}
+
 .contactDetails {
   /* border: 0.1rem solid black; */
   padding: 1rem;
@@ -428,4 +468,360 @@ svg {
   to {
     transform: rotate(360deg);
   }
+}
+
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.hero {
+  background-image: url('https://i.imgur.com/JRvAPwN.jpg');
+  height: 92vh;
+  color: white;
+  font-size: 3rem;
+  text-align: left;
+  padding: 2rem;
+  position: relative;
+  font-family: 'Bebas Neue', sans-serif;
+  background-size: cover;
+}
+
+.hero a {
+  font-size: 2rem;
+}
+
+/* .fade-in-text {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  color: white;
+  animation: fadeIn linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
+}
+
+.fade-in-text2 p {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  color: white;
+  animation-delay: 2s;
+  animation: fadeIn 2s linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
+}
+
+.fade-in-text3 p {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  color: white;
+  animation-delay: 8s;
+  animation: fadeIn 4s linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+.animation-box {
+  width: 100%;
+  height: 27.5rem;
+  /* background-color: blue; */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.animation-container {
+  width: 1000rem;
+  height: 30rem;
+}
+
+@keyframes topFadeOut {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bottomFadeOut {
+  0% {
+    position: absolute;
+    bottom: -5rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    bottom: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes topFadeOutVertical {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 45%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rightFadeInOut {
+  0% {
+    position: absolute;
+    right: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    right: 10rem;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    /* right: 10rem; */
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+.first-text {
+  font-size: 4.4rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+  opacity: 0;
+  animation-name: topFadeOut;
+  animation-duration: 5s;
+  color: white;
+}
+
+.second-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 8.5rem;
+  opacity: 0;
+  animation-name: rightFadeInOut;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  color: #ccc;
+}
+
+.third-text {
+  transform: rotate(-90deg);
+  font-size: 2rem;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  opacity: 0;
+  animation-name: topFadeOutVertical;
+  animation-delay: 7.5s;
+  animation-duration: 6s;
+  color: #a3ddf0;
+  white-space: nowrap;
+}
+
+.fourth-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: white;
+  animation-name: fadeInOut;
+  animation-delay: 8.5s;
+  animation-duration: 9s;
+}
+
+.fifth-text {
+  font-size: 5rem;
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+  opacity: 0;
+  color: #f0eba3;
+  animation-name: bottomFadeOut;
+  animation-delay: 10s;
+  animation-duration: 9s;
+}
+
+/* defines the animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* hero p {
+  
+  opacity: 0; 
+  animation: fadeInUp 1s ease-in-out 0s forwards;
+  &.first {
+    animation-delay: 1s;
+  }
+  &.second {
+    animation-delay: 3s;
+  }
+  &.third {
+    animation-delay: 5s;
+  }
+  &.fourth {
+    animation-delay: 7s;
+  }
+  &.fifth {
+    animation-delay: 9s;
+  }
+  &.sixth {
+    animation-delay: 11s;
+  }
+ } */
+
+.hero .first {
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out 0s forwards;
+  animation-delay: 1s;
+}
+
+.hero .second {
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out 0s forwards;
+  animation-delay: 3s;
+}
+
+.hero .third {
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out 0s forwards;
+  animation-delay: 5s;
+}
+
+.hero p {
+  margin: 0;
+  font-family: 'Bebas Neue', 'Roboto', sans-serif;
 }
