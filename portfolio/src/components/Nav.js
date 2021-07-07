@@ -29,8 +29,10 @@ const Nav = (props) => {
         {/* <a href="javascript:void(0)" class="closebtn" onClick={props.closeNav}>
           &times;
         </a> */}
-        <button class="closebtn" onClick={props.closeNav}>&times;</button>
-        
+        <button class="closebtn" onClick={props.closeNav}>
+          &times;
+        </button>
+
         {/* <button class="openbtn" onClick={props.openNav}>
           &#9776;
         </button> */}
@@ -49,7 +51,7 @@ const Nav = (props) => {
           </NavLink>
           <a
             target="#"
-            href="https://docs.google.com/document/d/1yfFNl3ThyxlHvLQDL653anpUWxS7WxuDTQieI5tmjq8"
+            href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/17Q6ZteUgvlzbBXkpvGVyiGLnyHFY5NCXCUxyxl2eJhk/export?format=pdf"
             onClick={props.closeNav}
           >
             Resume

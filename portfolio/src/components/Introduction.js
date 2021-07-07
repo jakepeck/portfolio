@@ -40,7 +40,7 @@ const Introduction = () => {
           <div className="pageDiv">
             <a
               target="#"
-              href="https://docs.google.com/document/d/1yfFNl3ThyxlHvLQDL653anpUWxS7WxuDTQieI5tmjq8"
+              href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/17Q6ZteUgvlzbBXkpvGVyiGLnyHFY5NCXCUxyxl2eJhk/export?format=pdf"
             >
               Resume
             </a>
