@@ -18,7 +18,7 @@ const About = (props) => {
           coding has always been of great interest to me and has played an
           active role in my life.
         </p>
-        <h2>A Strong Leader - An Even More Formidable Teammate.</h2>
+        <h2>A Strong Teammate - An Even More Formidable Leader.</h2>
         <p>
           While my charisma and interpersonal skills allow me to flourish in
           roles leading teams, I believe that I also add tremendous value as a

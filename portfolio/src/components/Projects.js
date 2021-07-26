@@ -5,6 +5,13 @@ import ProjectCard from './ProjectCard'
 const Projects = () => {
   const myProjects = [
     {
+      name: 'IceCreamSocial',
+      projecturl: 'https://brave-aryabhata-794751.netlify.app',
+      projectimg: 'https://i.imgur.com/ycYSjTn.png',
+      projectdesc:
+        'A full stack social media web application for chefs, foodies, and social media addicts alike to view community members, create posts and comment on everything regarding the best of the best in dessert. Technologies leveraged include: PostgreSQL, Python3, Flask, React, React-Redux, Thunk, Node, React-Rainbow'
+    },
+    {
       name: 'Barber Booking Buddy',
       projecturl: 'https://infinite-temple-92107.herokuapp.com/',
       projectimg: 'https://i.imgur.com/RA8s4bt.png',
