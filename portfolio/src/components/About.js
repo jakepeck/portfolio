@@ -20,12 +20,12 @@ const About = (props) => {
         </p>
         <h2>A Strong Teammate - An Even More Formidable Leader.</h2>
         <p>
-          While my charisma and interpersonal skills allow me to flourish in
-          roles leading teams, I believe that I also add tremendous value as a
-          teammate. I'm supportive of my team's goals and mission and make sure
-          to listen to what others have to say. I think of myself as a morale
-          booster and try to be the engine powering an outstanding team - no
-          matter how the team may be structured.{' '}
+          I'm supportive of my team's goals and mission and make sure to listen
+          to what others have to say. I think of myself as a morale booster and
+          try to be the engine powering an outstanding team - no matter how the
+          team may be structured. While I add tremendous value as a team member,
+          my charisma and interpersonal skills allow me to flourish in roles
+          leading teams.{' '}
         </p>
         <h2>Always Pursuing Excellence.</h2>
         <p>
