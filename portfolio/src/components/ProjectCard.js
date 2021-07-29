@@ -3,8 +3,8 @@ import React from 'react'
 const ProjectCard = (props) => {
   let { name, projectdesc, projecturl, projectimg } = props
   return (
-    <div className="projectCardC">
-      <img src={`${projectimg}`} alt="projectImage" width="200" /> <br/>
+    <div className="projectCardC gallery-cell">
+      <img src={`${projectimg}`} alt="projectImage" width="200" /> <br />
       <a target="#" href={`${projecturl}`}>
         {name}
       </a>{' '}

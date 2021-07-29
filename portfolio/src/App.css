@@ -53,6 +53,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 10;
   /* border: 0.1rem solid blue; */
   /* background-color: black; */
   color: white;
@@ -76,6 +80,27 @@
   font-size: 4.5rem;
 }
 
+.sidebar #navlinks div:hover {
+  color: #f1f1f1;
+  font-size: 4.5rem;
+}
+
+.overlay-content-jp div:hover {
+  color: #f1f1f1;
+  font-size: 4.5rem;
+}
+
+.sidebar #navlinks div {
+  color: #f1f1f1;
+  font-size: 4.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 3rem;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
   position: absolute;
@@ -87,6 +112,17 @@
   border: transparent;
   color: white;
 }
+
+/* .overlay-jp .closebtn {
+  position: absolute;
+  top: 0.75rem;
+  right: 1.25rem;
+  font-size: 4rem;
+  margin-left: 1rem;
+  background-color: transparent;
+  border: transparent;
+  color: white;
+} */
 
 header h1 {
   margin: 0.25em 0;
@@ -107,12 +143,96 @@ h1 {
   border: none;
 }
 
+.overlayopenbtn {
+  font-size: 3rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 1rem 1rem 0 0;
+  border: none;
+}
+
 #myOpenBtn {
   position: absolute;
   /* top: 0; */
   right: 0;
   margin: -0.5em 0 0 0;
   background: transparent;
+}
+
+#myCloseBtn {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  font-size: 5rem;
+  margin-left: 1rem;
+  margin-top: -0.15em;
+  background-color: transparent;
+  border: transparent;
+  color: white;
+}
+
+#myOverlayOpenBtn {
+  position: absolute;
+  /* top: 0; */
+  right: 0;
+  margin: -0.6em 0 0 0;
+  background: transparent;
+  border: transparent;
+  color: white;
+}
+
+.overlay-jp {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: 0.5s;
+  background-color: rgb(4, 0, 37);
+}
+
+.overlay-content-jp {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay-jp div {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 3rem;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* .overlay-jp div:hover,
+.overlay-jp div:focus {
+  color: black;
+} */
+
+.overlay-jp .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 5rem;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay-jp div {
+    font-size: 2rem;
+  }
+  .overlay-jp .closebtn {
+    font-size: 4rem;
+    top: 15px;
+    right: 35px;
+  }
 }
 
 .openbtn:hover {
@@ -160,7 +280,8 @@ h1 {
   margin: 0.5rem auto;
   border-radius: 0.5rem;
   max-width: 80vw;
-  width: 77vw;
+  max-height: 900px;
+  /* width: 77vw; */
   background-color: white;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
@@ -173,6 +294,11 @@ h1 {
 .projectCardC p {
   margin: 0.5em;
   padding: 0 1em;
+  /* text-align: initial; */
+}
+
+.projectCardC img {
+  max-height: 60%;
   /* text-align: initial; */
 }
 
@@ -253,6 +379,14 @@ article div .projects {
   margin: 0;
 }
 
+.gallery-cell {
+  height: 95%;
+  width: 85%;
+}
+
+.main-gallery {
+  height: 75vh;
+}
 p {
   font-family: Roboto, sans-serif;
 }
@@ -266,6 +400,7 @@ p {
   background-repeat: no-repeat;
   /* background-position: center; */
   background-size: contain;
+  margin-top: 8vh;
 }
 
 img {
@@ -274,6 +409,18 @@ img {
   max-width: stretch;
   width: auto;
   height: auto;
+}
+
+#about-div {
+  scroll-margin-top: 8vh;
+}
+
+#resume-div {
+  scroll-margin-top: 8vh;
+}
+
+#projects-gallery {
+  scroll-margin-top: 8vh;
 }
 
 .about img {
@@ -313,7 +460,7 @@ article {
   padding: 1rem;
   margin: 1rem auto;
   border-radius: 1rem;
-  max-width: 78vw;
+  max-width: 88vw;
   background-color: white;
   /* box-shadow: 0rem 0rem 1rem 0.1rem darkslateblue; */
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
@@ -365,7 +512,7 @@ article h1 {
   font-size: 3rem;
   margin: 0;
   text-align: left;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   /* text-decoration: underline; */
 }
 
@@ -451,6 +598,45 @@ svg {
   background-color: black;
 }
 
+/* @media screen and (max-width: 800px) {
+  .sidebar {
+    padding-top: 1rem;
+  }
+  .sidebar a {
+    font-size: 1rem;
+  }
+
+  .myFooter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+} */
+#download-resume-button {
+  display: none;
+}
+@media screen and (max-width: 450px) {
+  .sidebar {
+    padding-top: 1rem;
+  }
+  .sidebar a {
+    font-size: 1rem;
+  }
+
+  #resume-pdf {
+    display: none;
+  }
+
+  #download-resume-button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* #resume-pdf {
+  display: in;
+} */
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {
@@ -511,6 +697,39 @@ svg {
   }
 }
 
+/* .resumeHolder a {
+  background-color: rgb(4, 0, 37);
+}
+
+.resumeHolder {
+  border-radius: 10px;
+} */
+
+/* #resume-div {
+  background-color: rgb(4, 0, 37);
+} */
+
+#resume-div button {
+  background-color: rgb(4, 0, 37);
+  border: transparent;
+  border-radius: 1em;
+  padding: 1em;
+  color: white;
+}
+
+button a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+}
+
+.hero .pageDiv {
+  font-size: 2rem;
+}
+
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
     url('https://i.imgur.com/b37Ru89.jpg');
@@ -532,6 +751,7 @@ svg {
 .hero a {
   font-size: 2rem;
   color: white;
+  text-decoration: none;
 }
 
 /* .fade-in-text {
@@ -839,3 +1059,65 @@ svg {
   margin: 0;
   font-family: 'Bebas Neue', 'Roboto', sans-serif;
 }
+
+.myHeader a {
+  text-decoration: none;
+}
+
+#myFooter {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: rgb(4, 0, 37);
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em 0 1em 0;
+  flex-wrap: wrap;
+}
+.icon-text-pair {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  /* margin: 1em; */
+  /* padding: 1em; */
+  /* align-self: flex-end; */
+}
+
+a i {
+  margin: 1em;
+}
+
+.icon-text-pair i {
+  margin: 0 0.5em;
+}
+
+/* .icon-text-pair #envelope-fix {
+  margin-top: -1px;
+} */
+
+.footer-text {
+  font-family: 'Bebas Neue';
+}
+
+#icon-fixer {
+  margin-top: -1px;
+}
+
+.icon-text-pair * {
+  text-decoration: none;
+  color: white;
+}
+/* i a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.devicon-linkedin-plain a {
+  width: 100%;
+  height: 100%;
+} */

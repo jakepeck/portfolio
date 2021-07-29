@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 // import Contact2 from './Contact2'
 // import Projects from './Projects'
 // import About from './About'
@@ -7,7 +7,27 @@ import { NavLink } from 'react-router-dom'
 // import Skills3 from './Skills3'
 // import Skills4 from './Skills4'
 
-const Introduction = () => {
+const Introduction = (props) => {
+  const handleContactNavigation = () => {
+    const contactSection = document.querySelector('#myFooter')
+    contactSection.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const handleProjectsNavigation = () => {
+    const projectSection = document.getElementById('projects-gallery')
+    projectSection.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const handleAboutNavigation = () => {
+    const aboutSection = document.getElementById('about-div')
+    aboutSection.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const handleResumeNavigation = () => {
+    const resumeSection = document.getElementById('resume-div')
+    resumeSection.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <div className="intro">
       {/* Introduction
@@ -27,23 +47,27 @@ const Introduction = () => {
 
         <div className="pageDivs">
           <div className="pageDiv">
-            <NavLink to="/about">About</NavLink>
+            {/* <NavLink to="/about">About</NavLink> */}
+            <div onClick={handleAboutNavigation}>About</div>
           </div>
           <div className="pageDiv">
-            <NavLink to="/projects">Projects</NavLink>
-          </div>
-
-          <div className="pageDiv">
-            <NavLink to="/contact">Contact</NavLink>
+            {/* <NavLink to="/projects">Projects</NavLink> */}
+            <div onClick={handleProjectsNavigation}>Projects</div>
           </div>
 
           <div className="pageDiv">
-            <a
+            <div onClick={handleResumeNavigation}>Resume</div>
+            {/* <a
               target="#"
               href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/17Q6ZteUgvlzbBXkpvGVyiGLnyHFY5NCXCUxyxl2eJhk/export?format=pdf"
             >
-              Resume
-            </a>
+              Resumé
+            </a> */}
+          </div>
+
+          <div className="pageDiv">
+            {/* <NavLink to="/contact">Contact</NavLink> */}
+            <div onClick={handleContactNavigation}>Contact</div>
           </div>
         </div>
 
