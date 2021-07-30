@@ -56,7 +56,7 @@ const Introduction = (props) => {
           </div>
 
           <div className="pageDiv">
-            <div onClick={handleResumeNavigation}>Resume</div>
+            <div onClick={handleResumeNavigation}>Resumé</div>
             {/* <a
               target="#"
               href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/17Q6ZteUgvlzbBXkpvGVyiGLnyHFY5NCXCUxyxl2eJhk/export?format=pdf"
