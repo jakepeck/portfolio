@@ -2,20 +2,20 @@
 import './App.css'
 import { Switch, Route } from 'react-router-dom'
 // import Nav from './components/Nav'
-import About from './components/About'
+// import About from './components/About'
 // import Introduction from './components/Introduction'
-import Projects from './components/Projects'
-import Contact2 from './components/Contact2'
+// import Projects from './components/Projects'
+// import Contact2 from './components/Contact2'
 import OnePage from './components/OnePage'
 import Footer from './components/Footer'
 import OverlayNav from './components/OverlayNav'
 
 const App = () => {
-  function openNav() {
-    document.getElementById('mySidebar').style.width = '100vw'
-    document.getElementById('main').style.marginLeft = '100vw'
-    document.getElementById('navlinks').style.display = 'revert'
-  }
+  // function openNav() {
+  //   document.getElementById('mySidebar').style.width = '100vw'
+  //   document.getElementById('main').style.marginLeft = '100vw'
+  //   document.getElementById('navlinks').style.display = 'revert'
+  // }
 
   /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
   // function closeNav() {
@@ -62,11 +62,11 @@ const App = () => {
 
       <main id="main">
         <Switch>
-          <Route exact path="/">
+          <Route path="/">
             {/* <Introduction /> */}
             <OnePage />
           </Route>
-          <Route exact path="/about">
+          {/* <Route exact path="/about">
             <About openNav={openNav} />
           </Route>
           <Route exact path="/projects">
@@ -77,7 +77,7 @@ const App = () => {
           </Route>
           <Route exact path="/onepage">
             <OnePage />
-          </Route>
+          </Route> */}
         </Switch>
       </main>
 
