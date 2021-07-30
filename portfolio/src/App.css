@@ -219,8 +219,8 @@ h1 {
 
 .overlay-jp .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
+  top: 1rem;
+  right: 1rem;
   font-size: 5rem;
 }
 
