@@ -21,6 +21,7 @@ const Footer = (props) => {
         </a>
       </div>
       <p className="footer-text">jakepeck44@gmail.com</p>{' '}
+      <p className="footer-text">@ 2021 Created By Jake Peck</p>
       {/* <p className="footer-text">734-277-5410</p> */}
     </div>
   )

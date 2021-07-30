@@ -43,17 +43,24 @@ const App = () => {
         <div onClick={scrollToTopOfPage}>
           <h1>Jake Peck</h1>
         </div>
-        {/* <button id="myOpenBtn" class="openbtn" onClick={openNav}>
+        <button id="myOpenBtn" class="openbtn" onClick={openOverlayNavigation}>
           &#9776;
         </button>
-        <Nav closeNav={closeNav} openNav={openNav} /> */}
-        <button
+        {/* <Nav closeNav={closeNav} openNav={openNav} /> */}
+        {/* <button
           id="myOverlayOpenBtn"
-          class="overlayopenbtn"
+          className="overlayopenbtn"
           onClick={openOverlayNavigation}
         >
           &#9776;
-        </button>
+        </button> */}
+        {/* <div
+          id="myOverlayOpenBtn"
+          className="overlayopenbtn"
+          onClick={openOverlayNavigation}
+        >
+          &#9776;
+        </div> */}
         <OverlayNav
           closeOverlayNav={closeOverlayNavigation}
           openOverlayNav={openOverlayNavigation}

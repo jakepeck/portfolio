@@ -36,11 +36,15 @@ const OverlayNav = (props) => {
   }
   return (
     <div id="overlay-nav" className="overlay-jp">
-      <button
+      {/* <button
         id="myCloseBtn"
         className="closebtn"
         onClick={props.closeOverlayNav}
       >
+        &times;
+      </button> */}
+
+      <button class="closebtn" id="myCloseBtn" onClick={props.closeOverlayNav}>
         &times;
       </button>
       <div className="overlay-content-jp">

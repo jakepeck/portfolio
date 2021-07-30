@@ -18,6 +18,10 @@
   }
 }
 
+* {
+  padding: 0;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -135,7 +139,7 @@ h1 {
 }
 /* The button used to open the sidebar */
 .openbtn {
-  font-size: 1rem;
+  font-size: 3rem;
   cursor: pointer;
   background-color: black;
   color: white;
@@ -154,10 +158,11 @@ h1 {
 
 #myOpenBtn {
   position: absolute;
-  /* top: 0; */
+  top: 0;
   right: 0;
-  margin: -0.5em 0 0 0;
+  margin: -1.25rem 0 0 0;
   background: transparent;
+  /* -webkit-appearance: none; */
 }
 
 #myCloseBtn {
@@ -180,6 +185,7 @@ h1 {
   background: transparent;
   border: transparent;
   color: white;
+  /* -webkit-appearance: none; */
 }
 
 .overlay-jp {
