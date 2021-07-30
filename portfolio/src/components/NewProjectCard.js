@@ -1,21 +1,26 @@
 import React from 'react'
 
 const NewProjectCard = (props) => {
-  let { name, projectdesc, projecturl, projectimg} = props
-  console.log(projectimg)
+  let { name, projectdesc, projecturl, projectimg, githuburl } = props
+
   let bgImg = `url(` + projectimg + `)`
   return (
-    <div className="newpc" style={{ backgroundImage: bgImg}}>
-      <div className="hidden">
+    <div className="newpc gallery-cell" style={{ backgroundImage: bgImg }}>
+      <div className="newpc-title">
+        <h1>{name}</h1>
         <a target="#" href={`${projecturl}`}>
-          {name}
+          Deployed Version
+        </a>
+        {' | '}
+        <a target="#" href={`${githuburl}`}>
+          Github
         </a>{' '}
         <br />
-        <p>{projectdesc}</p>
-
       </div>
-      <div className="newpc-title"><h1>{name}</h1></div>
-      
+
+      <div className="project-description">
+        <p>{projectdesc}</p>
+      </div>
     </div>
   )
 }

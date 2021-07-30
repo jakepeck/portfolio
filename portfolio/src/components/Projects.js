@@ -6,6 +6,7 @@ const Projects = () => {
   const myProjects = [
     {
       name: 'IceCreamSocial',
+      githuburl: 'https://github.com/jakepeck/icecreamsocial',
       projecturl: 'https://brave-aryabhata-794751.netlify.app',
       projectimg: 'https://i.imgur.com/ycYSjTn.png',
       projectdesc:
@@ -13,6 +14,7 @@ const Projects = () => {
     },
     {
       name: 'Barber Booking Buddy',
+      githuburl: 'https://github.com/meghowley/barberbookingbuddy',
       projecturl: 'https://infinite-temple-92107.herokuapp.com/',
       projectimg: 'https://i.imgur.com/RA8s4bt.png',
       projectdesc:
@@ -20,6 +22,7 @@ const Projects = () => {
     },
     {
       name: 'Happy Hour App',
+      githuburl: 'https://github.com/jakepeck/happy-hour-app',
       projecturl: 'https://whispering-oasis-08122.herokuapp.com/',
       projectimg: 'https://i.imgur.com/T0EIHWn.png',
       projectdesc:
@@ -27,12 +30,14 @@ const Projects = () => {
     },
     {
       name: 'Go-Fish',
+      githuburl: 'https://github.com/jakepeck/go-fish',
       projecturl: 'https://jakepeck-go-fish.surge.sh',
       projectimg: 'https://i.imgur.com/I3IZyR9.png',
       projectdesc: 'JavaScript implementation of the classic card game Go-Fish.'
     },
     {
       name: 'Tic-Tac-Toe',
+      githuburl: 'https://github.com/jakepeck/u1_hw_tic_tac_toe',
       projecturl: 'https://jakepeck-tic-tac-toe.surge.sh',
       projectimg: 'https://i.imgur.com/bJMqh7e.png',
       projectdesc: 'JavaScript implementation of Tic-Tac-Toe'
